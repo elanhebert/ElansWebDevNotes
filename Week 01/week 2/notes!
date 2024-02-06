@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial scale=1"> 
+
+<title>HTML Elements 101</title>
+</head>
+
+<form action="">
+
+
+</form>
+
+<fieldset>
+<legend>
+    simple input elements
+</legend>
+<p>
+   the box and titile of this forum group are created by the fieldset and legend tags 
+</p>
+
+<label for="firstname">first name</label>
+<input name="firstname" type="text" >
+</fieldset>
+<!-- these things ^ have to match -->
+
+<fieldset>
+    <legend>
+        text areas
+    </legend>
+<label for="whyidm">why did you apply to IDM?</label>
+
+</fieldset>
+
+<fieldset>
+    <legend>
+        check boxes
+    </legend>
+    <label for="pet"> what pet do you have?</label>
+    <input type="checkbox" name="pet" value="dog"/> Dog
+    <input type="checkbox" name="pet" value="cat"/> Cat
+    <input type="checkbox" name="pet" value="fish"/> Fish
+</fieldset>
+
+<p> select options aka dropdowns</p>
+<label for="pick a state"></label>
+
+<select></select>
+
+<input type="button" value="submit" name="submit"/>
+<input type="number">
+<body>
