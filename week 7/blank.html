@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial scale=1"> 
+
+<title>Event listeners and Delegation</title>
+<style type="text/css">
+img {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    color: red;
+    text-shadow: 2,2,2,2,black(0.4);
+}
+
+</style>
+<script type="text/javascript">
+    // in this example the callback function is anonymous, aka we call a function here and it happens and we never need to call it anywhere else so why name it?
+document.addEventListener(DOMContentLoaded, function () {
+console.log('locked and loaded!')
+hidden = document.getElementById('hidden')
+// this is usually where we assign elements to variables, or where we add event listeners 
+document.getElementById('hidden').addEventListener('click',toggleVisable)
+document.getElementById('eventH1').addEventListener('mouseover',function(event){
+ console.log(event.target)   
+ //store event target in variable 
+ var el = event.target
+ el.classlist.toggle('active')
+})
+}
+)
+
+function toggleVisable () {
+    var peep = document.getElementById('sparkle')
+    peep.classList.toggle('hidden')
+    if (peep.classlist.contains('hidden')){
+        hidden.innerHTML
+    }
+}
+
+
+
+</script>
+
+</head>
+
+<body>
+
+    <h1 id="eventH1">
+        hi! this is here to show image
+    </h1>
+
+    <button id="hidden">hide</button>
+
+    <img
+    id="sparkle"
+    src="/Users/elanhebert/Desktop/Sound Files Geo24/Screen Shot 2024-02-23 at 2.48.30 PM.png" />
+
+
+
+
+</body>

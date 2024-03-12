@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial scale=1"> 
+
+<title>Dynamic Dom</title>
+<style type="text/css">
+
+    #content {
+        color: pink
+    }
+
+    @media screen and (max-width: 767px) {
+        #content {
+            color: steelblue;
+        }
+    }
+
+</style>
+
+</head>
+<body>
+<button onclick="addSingleP"()>Add a single P</button>
+<button onclick="addmultipleP"()>Add mutlple P in the right way</button>
+<div id="content">
+    <p>This is some dummy text that willbe overwritten by innerHTML</p>
+</div>
+   
+
+
+<script type="text/javascript">
+// declare our content variable globally so that we can access it anywhere within our script
+var content = document.getElementById('content')
+// console.log(content)
+function addSingleP() {
+    content.innerHTML = '<p>This is a poorly instantiated p using trickery, </p>'
+}
+
+function addmultipleP(num) {
+// var num = 0
+for (var i = 0;i < num; i++) {
+// create a p element (node)
+var p = document.createElement('P')
+// create a text node to go inside
+var text = document.createTextNode(
+    'this is a paragraph number' + (i+1) + 'inserted with Nodes'
+)
+// append the text nod to the p node 
+p.appendChild (text)
+//append the p nod to the html doc
+content.appendChild(p)
+
+}
+
+
+}
+
+</script>
+
+
+</body>

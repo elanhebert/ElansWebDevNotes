@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial scale=1"> 
+
+<title>JS Data Types</title>
+<style type="text/css"></style>
+
+<script type="text/javascript">
+
+// declare a variable 
+
+var myVar
+
+// assigning a value to a variable 
+
+myVar = 'number'
+
+// declare and assign a value in one line 
+
+var otherVar = 24
+
+// we can reassign values at any time, AND new type of value 
+
+otherVar = true
+
+console.log(myVar)
+console.log(typeof myVar)
+
+var x = 15
+var y = '3'
+var z = 'three'
+
+console.log (x+y)
+console.log (x*y)
+console.log (x*z)
+
+// variables and string mixed 
+var temp = 52
+var message = "today\'s temperature is" + temp + 'degrees f.'
+console.log(message)
+
+// functions parameters and the onclick attribute
+function sumValues(a,b) {
+    // variables declared inside {} live and due inside {} this is called scoping
+    var sum = a + b
+    sum = 10 + 20 
+}
+
+// error thrown because var sum is scoped within sumValues
+// console.log(sum)
+
+// call a function inside your code 
+sumValues (123,456)
+
+//booleans and conditionals 
+var isOn = true
+// toggle between on and off 
+function switchOnOff () {
+    if (isOn = true) {
+        alert ('isOn is currently TRUE. switching to FALSE')
+        isOn = false
+    } else {
+        alert ('isOn is currently FALSE. switching to TRUE')
+        isOn = true
+    }
+}
+
+// loops and increments
+// i++ is shorthand for 1 +i+1
+// i-- is shorthand for i =i - 1
+// i+= ia ahorthand for I = i+5
+
+// BEWARE OF INFINITE LOOPS. YOUR CONDITION MUST EVALUATE TO FALSE EVENTUALLY
+function countToN(n) {
+// for loop
+
+for { var i = 0; i <=n; }
+
+}
+
+</script>
+
+</head>
+
+<body>
+    <button onclick="switchOnOff">toggle on/off</button>
+
+</body>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial scale=1"> 
+
+<title>Dropdown Menu Nested UL</title>
+<style type="css">
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 20px 50px 150px;
+        font-size: 13px;
+        text-align: center;
+        background:rgba(rgb(117, 76, 121),0, 0, alpha)
+    }
+
+    ul { display:inline;
+        margin: 0;
+        padding: 13px 4px 17px 0;
+        list-style-type: none;
+        box-shadow: 0 0 5px rgba(rgb(0, 0, 0), 0green,0blue, 15%);
+
+
+    }
+
+    ul li {
+        display: inline-block;
+        position: relative;
+        padding: 15px 10px;
+        background: #fff;
+        cursor: pointer;
+        transition: all 0.5s;
+      
+    }
+
+    ul li:hover {
+        background: #555
+       color( rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255))
+
+    }
+ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 150px;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+
+ul li ul li {
+background: #555;
+display:block;
+color:#fff;
+text-shadow: 0 --1px;
+
+
+}
+
+ul li ul li:hover {
+    background: #666;
+}
+
+
+ul li:hover ul {
+background: #555;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<ul>
+<li>home</li>
+<li>about</li>
+<li>portfolio
+<ul>
+    <li>Web Design</li>
+    <li>Web Development</li>
+    <li>Photography</li>
+</ul>
+</li>
+
+</ul>
+
+
+</body>
