@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing</title>
+  <link rel="stylesheet" href="style.css"/>
+  </head>
+  <style>
+.button-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; 
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin-left: 12vw;
+      margin-right: 12vw;
+      margin-bottom: 2vh;
+      font-size: 10px;
+      font-family:'superglue'; src: url(midterm/superglue);
+      text-align: center;
+      text-decoration: none;
+      background: linear-gradient(45deg, #ff039a, #000);
+      color: #fff;
+      border: 3px solid #000000;
+      border-radius: 5px;
+      transition: 0.3s, color 0.3s;
+    }
+
+    .button:hover {
+      background: linear-gradient(45deg, #ffffff, #ff039a);
+      color: #000;  
+      border: 3px solid #ffffff;
+    }
+
+
+.info_modal {
+    
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0,0,0,0.3);
+
+z-index: 9999;
+
+opacity: 0;
+transition: opacity 400ms ease-in;
+
+pointer-events: none;
+
+}
+
+.info_modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+.info_modal div {
+width: 300px;
+height: 300px;
+position: relative;
+margin: 10% auto;
+padding: 2rem;
+background-color: rgb(102, 5, 73);
+border-radius: 10px;
+
+
+}
+
+.close {
+height: 20px;
+width: 20px;
+background-color: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: 0;
+right: 0;
+line-height: 20px;
+text-align: center;
+cursor: pointer;
+transition: all 1s ease;
+border-top-right-radius: 10px;
+
+}
+
+.close:hover {
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+
+}
+
+.drip {
+    color: white;
+    font-size: 10px;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+<div style = "display: flex; justify-content: center; align-items: center; flex-direction: column ;">
+        <a class="button" style="background: linear-gradient(45deg, black, black); margin-top: 1vh; color: white;" href="home.html">Home</a>
+    <Div class="title">
+        <h1>Writing</h1>
+    </Div>
+<a href="#info" class="button">Static</a>
+<a href="#info2" class="button">Academic</a>
+<a href="#info3" class="button">Creative</a>
+
+
+
+<div id="info" class="info_modal">
+<div>
+<a href="#close" class="drip">x</a>
+<h2>Ketamine and Kick Drumbs</h2>
+<a href="https://docs.google.com/document/d/1Ll3iQOYYIUydZ9epphfgEpDxS2flFUuryPHg23X-h2c/edit?usp=sharing" class="drip">Here</a>
+
+</div> 
+</div>
+
+
+<div id="info2" class="info_modal">
+    <div> <a href="#close" class="drip">x</a>
+    <h2 style="font-size: 20px;">A Repression of Female Sexuality </h2>
+    <a href="https://docs.google.com/document/d/1SHnFTXXpwP4ezAjXrOwSYaZO_TYgmmV9/edit?usp=sharing&ouid=108619634563189873569&rtpof=true&sd=true" class="drip">Here</a>
+   
+    </div>
+
+</div>
+
+<div id="info3" class="info_modal">
+    <div> <a href="#close" class="drip">x</a>
+    <h2>Capitlist Realism</h2>
+    <a href="https://docs.google.com/document/d/1nROxfo9IBJ_aUI98_ZEVHaXhc-TnIaUj/edit?usp=sharing&ouid=108619634563189873569&rtpof=true&sd=true" class="drip">Here</a>
+   
+    </div>
+
+</div>
+
+</div>
+
+</body>

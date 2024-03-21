@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Contact Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      font-family: 'superglue';
+      background-color: #121212; /* Dark background color */
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+
+    h1, p {
+    color: #fff;
+    }
+    .glow-border::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px solid rgb(231, 7, 134);
+    border-radius: 20px;
+    z-index: -1;
+    animation: glowingBorder 3s infinite alternate;
+  }
+  @keyframes glowingBorder {
+    0% {
+      border-color: rgba(243, 17, 130, 0.81); 
+    }
+    100% {
+      border-color: rgba(255, 255, 255, 0.7); 
+    }
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="contactcontainer glow-border">
+    <h1>Contact Me</h1>
+    <p>elh7929@nyu.edu</p>
+    <div class="contactcontainer.form">
+        <form action="action_page.php">
+      <div>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+
+        <div>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      
+        <div style="display:flex;justify-content: center;">
+          <label for="subject" style="float: inline-start;">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height: 100px;float: none;"></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+
+        </form>
+      </div>
+
+  </div>
+
+
+
+</body>
+
+</html>

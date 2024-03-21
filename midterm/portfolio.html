@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Elan Audio Experimentations</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .gradient-background {
+            width: 1000vw;
+            height: 125vh;
+
+            background: linear-gradient(to right, #862e86, #da1b60, #862e86, #da1b60); 
+            background-size: 1000% 1000%;
+            animation: gradientAnimation 10s infinite; 
+            z-index: -1;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .text-overlay {
+            position: absolute;
+            display: flex;
+            top: 10%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-family: 'superglue'; 
+            color: #fff;
+        }
+        .middle {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position:relative;
+            text-align: center;
+        }
+
+        .text-overlay h1 {
+            font-size: 3em;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .star {
+            width: 50px;
+            height: auto;
+        }
+
+        .star-left {
+            margin-right: 10px;
+        }
+
+        .star-right {
+            margin-left: 10px;
+        }
+
+
+    .soundcloud-container {
+      width: 60%;
+    }
+
+    .soundcloud-iframe {
+
+      width: 100%;
+      height: 166px;
+    }
+
+    .soundcloud-info {
+      font-size: 10px;
+      color: #cccccc;
+      line-break: anywhere;
+      word-break: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+      font-weight: 100;
+    }
+
+    .soundcloud-info a {
+      color: #cccccc;
+      text-decoration: none;
+    }
+    @media screen and (max-width: 780px) {
+      .text-overlay h1{
+        font-size: 1.5rem; 
+      }
+      .middle {
+        flex-direction: column;
+      }
+      .star-left {
+        margin-right: 0;
+      }
+      .star-right {
+        margin-left: 0;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .text-overlay h1{
+        font-size: 0.5rem; 
+      }
+      .middle {
+        flex-direction: column;
+      }
+      .star-left {
+        margin-right: 0;
+      }
+      .star-right {
+        margin-left: 0;
+      }
+    }
+    @media screen and (max-width: 1050px) {
+      .text-overlay h1{
+        font-size: 2rem; 
+      }
+    }
+
+    </style>
+</head>
+<body>
+
+   <section>
+    <div class="gradient-background"></div>
+   </section>
+   
+    <div class="text-overlay">
+        <div class="middle">
+            <img class="star star-left" src="white-star-icon.png">
+            <h1>Audio</br>Experimentations</h1>
+            <img class="star star-right" src="white-star-icon.png">
+        </div>
+    
+        <div class="soundcloud-container">
+            <iframe class="soundcloud-iframe" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1757619897%3Fsecret_token%3Ds-JnXFugFj2nO&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            <div class="soundcloud-info">
+              <a href="https://soundcloud.com/elan-hebert-221894804" target="_blank" class="soundcloud-username">Elan Hebert</a> · 
+              <a href="https://soundcloud.com/elan-hebert-221894804/rabbithole/s-JnXFugFj2nO" target="_blank" class="soundcloud-trackname">RabbitHole</a>
+            </div>
+          </div>
+          <div class="soundcloud-container">
+            <iframe class="soundcloud-iframe" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1764146634%3Fsecret_token%3Ds-d0z69OKB5bk&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true"></iframe>
+            <div class="soundcloud-info">
+              <a href="https://soundcloud.com/elan-hebert-221894804" target="_blank" class="soundcloud-username">Elan Hebert</a> · 
+              <a href="https://soundcloud.com/elan-hebert-221894804/powdered-sugar/s-d0z69OKB5bk" target="_blank" class="soundcloud-trackname">Powdered Sugar</a>
+            </div>
+          </div>
+          <div class="soundcloud-container">
+            <iframe class="soundcloud-iframe" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1770832401%3Fsecret_token%3Ds-Mu3OeONRECP&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true"></iframe>
+            <div class="soundcloud-info">
+              <a href="https://soundcloud.com/elan-hebert-221894804" target="_blank" class="soundcloud-username">Elan Hebert</a> · 
+              <a href="https://soundcloud.com/elan-hebert-221894804/powdered-sugar-mix-2/s-Mu3OeONRECP" target="_blank" class="soundcloud-trackname">Powdered Sugar Mix 2</a>
+            </div>
+          </div>
+          <div class="soundcloud-container">
+            <iframe class="soundcloud-iframe" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1750721136%3Fsecret_token%3Ds-bKHIMagjGLd&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true"></iframe>
+            <div class="soundcloud-info">
+              <a href="https://soundcloud.com/elan-hebert-221894804" target="_blank" class="soundcloud-username">Elan Hebert</a> · 
+              <a href="https://soundcloud.com/elan-hebert-221894804/prophet/s-bKHIMagjGLd" target="_blank" class="soundcloud-trackname">Prophet</a>
+            </div>
+          </div>
+          
+
+    </div>
+
+</body>
+</html>
