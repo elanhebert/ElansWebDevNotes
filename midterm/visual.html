@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>visual media</title>
+  <style> 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+display: flex;
+padding: 0%;
+background-color: black;
+align-items: center;
+justify-content: center;
+top: 30%;
+text-align: center;
+
+}
+img {
+width: 300px;
+height: 200px;
+z-index: 1;
+}
+
+.intro {
+
+    font-family: 'superglue';
+    color: white;
+    border: 2px solid rgb(255, 8, 152);
+
+}
+
+.slides {
+    position: relative;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.carrot {
+    position: relative;
+ border: 2px solid rgb(255, 0, 166);
+ align-items: center;
+justify-content: center;
+}
+.window{
+    position: relative;
+ border: 2px solid rgb(255, 0, 166);
+ align-items: center;
+justify-content: center;
+}
+
+
+
+
+.title {
+color: white;
+font-family: 'superglue';
+display: flex;
+align-self: center;
+justify-content: center;
+flex-direction: column;
+position: absolute;
+top: 10%;
+ 
+}
+
+
+
+
+.title2 {
+color: white;
+font-family: 'superglue';
+align-self: center;
+justify-content: center;
+position: relative;
+margin-top: 50px;
+ 
+
+}
+
+
+.title3 {
+color: white;
+font-family: 'superglue';
+align-self: center;
+justify-content: center;
+position: relative;
+margin-top: 50px;
+}
+
+.title4 {
+color: white;
+font-family: 'superglue';
+align-self: center;
+justify-content: center;
+position: relative;
+margin-top: 50px;
+}
+
+
+
+.bow2{
+    position: relative;
+ border: 2px solid rgb(255, 0, 166);
+ align-items: center;
+justify-content: center;
+}
+
+.bow {
+    position: relative;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.collage2{
+    position: relative;
+ border: 2px solid rgb(255, 0, 166);
+ align-items: center;
+justify-content: center;
+}
+
+
+.collage{
+    position: relative;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.tattoo2{
+    position: relative;
+ border: 2px solid rgb(255, 0, 166);
+ align-items: center;
+justify-content: center;
+}
+
+
+.tattoo{
+    position: relative;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+  </style>
+
+  <body>
+
+
+<div class="title">
+
+ 
+    <div class="intro">
+        <h1>Visual media</h1>   
+    </div>
+
+  <div class="slides">
+
+    <img class="carrot" src="Elan_Hebert_Plantjournal.jpg"/>
+    <img class="carrot" src="Elan_Hebert_Plantjournal2.jpg"/>
+    <img class="carrot" src="Elan_Hebert_Plantjournal3.jpg"/>
+    <img class="carrot" src="Elan_Hebert_Plantjournal4.jpg"/> 
+    <img class="carrot" src="Elan_Hebert_Plantjournal5.jpg"/>
+  </div>
+
+
+
+  <div class="title2">
+      <h2>Carrot Zine</h2>
+  </div>
+  <div class="slides">
+    <img class="window" src="window_slay.jpg"/>
+
+
+  </div>
+  <div class="title3">
+    <h2>Windows</h2>
+  </div>
+
+
+  <div class="bow">
+<img class="bow2" src="bow.jpg">
+
+  </div>
+
+
+
+  <div class="title4">
+    <h2>bow</h2>
+  </div>
+
+  <div class="collage">
+    <img class="collage2" src="collage.jpg">
+  </div>
+
+
+  <div class="title4">
+    <h2>collage</h2>
+  </div>
+
+  <div class="tattoo">
+    <img class="tattoo2" src="tattoo.jpg">
+  </div>
+
+
+  <div class="title4">
+    <h2>tattoo</h2>
+  </div>
+
+
+
+
+
+<script type="text/javascript">
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("carrot");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000);
+}
+var sind = 0
+baguette();
+
+function baguette() {
+  var i;
+  var x = document.getElementsByClassName("window");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  sind++;
+  if (sind > x.length) {sind = 1}
+  x[sind-1].style.display = "block";
+  setTimeout(baguette, 2000);
+}
+
+
+
+</script>
+
+
+
+  </body>
