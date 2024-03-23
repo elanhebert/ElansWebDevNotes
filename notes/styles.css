@@ -28,4 +28,13 @@ position:relative
    height: 200px;
    position: absolute;
    bottom:10px
+
+}
+
+header {
+    background-color: thistle;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }

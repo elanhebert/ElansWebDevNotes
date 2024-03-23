@@ -137,7 +137,7 @@ transform: scale(1);
 
 /* tablet */
 
-@media screen and (min-width: 768px;) and (max-width:1024;) {
+@media screen and (min-width: 768px) and (max-width:1024) {
     .hero article {
         width: 75%;
     }
@@ -159,7 +159,3 @@ transform: scale(1);
 }
     
 }
-
-    
-
-
