@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial scale=1"> 
+
+<title>JS Data Types</title>
+<style type="text/css"></style>
+
+<script type="text/javascript">
+// Integers aka whole numbers //
+var x = 15
+var y = 35
+
+// single math functions 
+// addition +
+console.log(x+y)
+// subtraction // 
+console.log(x-y)
+// mutliply *
+console.log(x*y)
+// divide
+console.log(x/y)
+// modular operator % returns the division remainder
+//Pemdas mattters
+console.log((x+y)*(y-1))
+//floating point numbers and round,floor,ceil methods
+var z = 2.25
+//math.floor() will always round down
+var zDown = math.floor(z)
+console.log(zDown)
+// math.round takes into account the value of the decimals to round 
+var num1 = 2.2
+var num2= 2.7
+console.log(math.round(num1))
+console.log(math.round(num2))
+
+var r = math.random()
+console.log(r)
+//use math random to get the whole number 1 or 0 for a booleam type situation 
+var yn = math.round(math.random())
+if (yn = 0) {console.log('heads')} else {console.log('tails')}
+function randNumMax(n) {
+    var rn = math.round(n * math.random())
+    test = rn
+}
+//random number within a rage, min and max params this time
+function randNumRange (min,max) {
+return Math.round(math.random() * (max - min)+ min)
+
+}
+
+console.log(randNumRange(458,888))
+
+
+</script>
+</head>
