@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <title>Audio Experimentations</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'superglue';
+    
+        }
+
+        .gradient-background {
+            width: 100vw;
+            height: 230vh;
+            background: linear-gradient(to right, #ffa3ff, #da1b60, #862e86, #000000); 
+            background-size: 1000% 1000%;
+            animation: gradientAnimation 10s infinite; 
+            z-index: -1;
+
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+        .text-overlay {
+            position: absolute;
+            display: flex;
+            top: 10%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-family: 'superglue'; 
+            color: #fff;
+        }
+        .middle {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position:relative;
+            text-align: center;
+        }
+
+        .text-overlay h1 {
+            font-size: 3em;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .star {
+            width: 50px;
+            height: auto;
+        }
+
+        .star-left {
+            margin-right: 10px;
+        }
+
+        .star-right {
+            margin-left: 10px;
+        }
+
+
+    .soundcloud-container {
+      width: 60%;
+    }
+
+    .soundcloud-iframe {
+
+      width: 100%;
+      height: 166px;
+    }
+
+    .soundcloud-info {
+      font-size: 10px;
+      color: #cccccc;
+      line-break: anywhere;
+      word-break: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+      font-weight: 100;
+    }
+
+    .soundcloud-info a {
+      color: #cccccc;
+      text-decoration: none;
+    }
+
+
+
+    
+
+
+
+
+
+    @media screen and (max-width: 780px) {
+      .text-overlay h1{
+        font-size: 1.5rem; 
+      }
+      .middle {
+        flex-direction: column;
+      }
+      .star-left {
+        margin-right: 0;
+      }
+      .star-right {
+        margin-left: 0;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .text-overlay h1{
+        font-size: 0.5rem; 
+      }
+      .middle {
+        flex-direction: column;
+      }
+      .star-left {
+        margin-right: 0;
+      }
+      .star-right {
+        margin-left: 0;
+      }
+    }
+    @media screen and (max-width: 1050px) {
+      .text-overlay h1{
+        font-size: 2rem; 
+      }
+    }
+
+ 
+
+    </style>
+</head>
+<body>
+
+   <section>
+    <div class="gradient-background"></div>
+   </section>
+   
+
+
+    <!-- BOOTSTRAP NAVBAR -->
+    <div class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Elan Hebert</a>
+        <!-- This is our hidden(on larger screens) hamburger menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="#navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav align-self-end px-4">
+            <li class="nav-item">
+              <a class="nav-link"  href="about.html">
+                about
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html"> home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> play </a>
+            </li>
+            <!-- BEGIN DROPDOWN MENU ITEM -->
+            <li class="nav-item dropdown">
+              <a class="nav-link active"
+              aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                class="nav-link dropdown-toggle"
+                >Gallery</a
+              >
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="portfolio.html">audio</a></li>
+                <li><a class="dropdown-item" href="graphic.html">graphic</a></li>
+                <li><a class="dropdown-item" href="writing.html">writing</a></li>
+              </ul>
+            </li>
+            <!-- END DROPDOWN MENU ITEM -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="text-overlay">
+        <div class="middle">
+            <img class="star star-left" src="white-star-icon.png">
+            <h1>Audio</br>Experimentations</h1>
+            <img class="star star-right" src="white-star-icon.png">
+        </div>
+
+
+
+
+    <div class="soundcloud-container"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1800765669%3Fsecret_token%3Ds-dtt12BVZrDm&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/elan-hebert-221894804" title="Elan Hebert" target="_blank" style="color: #cccccc; text-decoration: none;">Elan Hebert</a> · <a href="https://soundcloud.com/elan-hebert-221894804/wood-glue/s-dtt12BVZrDm" title="Wood Glue" target="_blank" style="color: #cccccc; text-decoration: none;">Wood Glue</a></div> </div>
+
+    <div class="soundcloud-container"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1795455151%3Fsecret_token%3Ds-08aJCQmOzJ9&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/elan-hebert-221894804" title="Elan Hebert" target="_blank" style="color: #cccccc; text-decoration: none;">Elan Hebert</a> · <a href="https://soundcloud.com/elan-hebert-221894804/high-tides-mix-2/s-08aJCQmOzJ9" title="High Tides Mix 2" target="_blank" style="color: #cccccc; text-decoration: none;">High Tides Mix 2</a></div> </div>
+
+    <div class="soundcloud-container"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1789131694%3Fsecret_token%3Ds-RZd5agBvAyY&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/elan-hebert-221894804" title="Elan Hebert" target="_blank" style="color: #cccccc; text-decoration: none;">Elan Hebert</a> · <a href="https://soundcloud.com/elan-hebert-221894804/high-tide/s-RZd5agBvAyY" title="High Tide" target="_blank" style="color: #cccccc; text-decoration: none;">High Tide</a></div> </div>
+
+<div class="soundcloud-container">
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1777242411%3Fsecret_token%3Ds-UDcW2ar7OZE&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/elan-hebert-221894804" title="Elan Hebert" target="_blank" style="color: #cccccc; text-decoration: none;">Elan Hebert</a> · <a href="https://soundcloud.com/elan-hebert-221894804/thelordshouse/s-UDcW2ar7OZE" title="TheLordsHouse" target="_blank" style="color: #cccccc; text-decoration: none;">TheLordsHouse</a></div>
+</div>
+
+        
+        <div class="soundcloud-container">
+            <iframe class="soundcloud-iframe" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1757619897%3Fsecret_token%3Ds-JnXFugFj2nO&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            <div class="soundcloud-info">
+              <a href="https://soundcloud.com/elan-hebert-221894804" target="_blank" class="soundcloud-username">Elan Hebert</a> · 
+              <a href="https://soundcloud.com/elan-hebert-221894804/rabbithole/s-JnXFugFj2nO" target="_blank" class="soundcloud-trackname">RabbitHole</a>
+            </div>
+          </div>
+          <div class="soundcloud-container">
+            <iframe class="soundcloud-iframe" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1764146634%3Fsecret_token%3Ds-d0z69OKB5bk&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true"></iframe>
+            <div class="soundcloud-info">
+              <a href="https://soundcloud.com/elan-hebert-221894804" target="_blank" class="soundcloud-username">Elan Hebert</a> · 
+              <a href="https://soundcloud.com/elan-hebert-221894804/powdered-sugar/s-d0z69OKB5bk" target="_blank" class="soundcloud-trackname">Powdered Sugar</a>
+            </div>
+          </div>
+          <div class="soundcloud-container">
+            <iframe class="soundcloud-iframe" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1770832401%3Fsecret_token%3Ds-Mu3OeONRECP&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true"></iframe>
+            <div class="soundcloud-info">
+              <a href="https://soundcloud.com/elan-hebert-221894804" target="_blank" class="soundcloud-username">Elan Hebert</a> · 
+              <a href="https://soundcloud.com/elan-hebert-221894804/powdered-sugar-mix-2/s-Mu3OeONRECP" target="_blank" class="soundcloud-trackname">Powdered Sugar Mix 2</a>
+            </div>
+          </div>
+          <div class="soundcloud-container">
+            <iframe class="soundcloud-iframe" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1750721136%3Fsecret_token%3Ds-bKHIMagjGLd&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true"></iframe>
+            <div class="soundcloud-info">
+              <a href="https://soundcloud.com/elan-hebert-221894804" target="_blank" class="soundcloud-username">Elan Hebert</a> · 
+              <a href="https://soundcloud.com/elan-hebert-221894804/prophet/s-bKHIMagjGLd" target="_blank" class="soundcloud-trackname">Prophet</a>
+            </div>
+          </div>
+          
+
+    </div>
+
+</body>
+</html>

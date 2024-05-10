@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <title>Gallery</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+
+body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: 'superglue';
+            background-image: url('industrial_background.png'); 
+            background-size: cover; 
+        }
+
+        .Gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .Gallery img {
+            width: 45%;
+            height: auto;
+            margin: 10px; 
+            filter: grayscale(100%);
+            transition: filter 0.3s ease; 
+        }
+
+        .Gallery img:hover {
+            filter: grayscale(0%); 
+        }
+
+        .Gallery a {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+   
+
+    </style>
+
+<body class="p-0 m-0 border-0">
+
+    <!-- BOOTSTRAP NAVBAR -->
+    <div class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Elan Hebert</a>
+        <!-- This is our hidden(on larger screens) hamburger menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="#navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav align-self-end px-4">
+            <li class="nav-item">
+              <a class="nav-link"  href="about.html">
+                about
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html"> home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> play </a>
+            </li>
+            <!-- BEGIN DROPDOWN MENU ITEM -->
+            <li class="nav-item dropdown">
+              <a class="nav-link active"
+              aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                class="nav-link dropdown-toggle"
+                >Gallery</a
+              >
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="portfolio.html">audio</a></li>
+                <li><a class="dropdown-item" href="graphic.html">graphic</a></li>
+                <li><a class="dropdown-item" href="writing.html">writing</a></li>
+              </ul>
+            </li>
+            <!-- END DROPDOWN MENU ITEM -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="Gallery">
+        <a href="static.html">
+            <img src="Static_Work.png" />
+        </a>
+        <img src="static_work_2.png"/>
+
+        <a href="gallery.html">
+            <img src="zine_work.png" />
+        </a>
+
+        <img src="Family_work.png"/>
+
+
+    </div>
